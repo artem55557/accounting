@@ -53,8 +53,8 @@ body, html {
     flex: 1 1 auto;
   }
 
-  &__feature-bar {
-  }
+  // &__feature-bar {
+  // }
 }
 .menu {
   position: relative;
@@ -132,8 +132,7 @@ body, html {
 .menu-open{
   right: 0;
 }
-.active {
-}
+
 .feature-bar {
   display: flex;
   text-transform: uppercase;
@@ -166,8 +165,8 @@ body, html {
     }
   }
 
-  &__burger {
-  }
+  // &__burger {
+  // }
 }
 
 .burger-btn {
@@ -237,22 +236,22 @@ body, html {
   padding: 15px;
   background-color: #f1f5f8;
 
-  &__header {
-  }
+  // &__header {
+  // }
 
-  &__info {
-  }
+  // &__info {
+  // }
 
-  &__btn-block {
-  }
+  // &__btn-block {
+  // }
 
   &__body {
     flex: 1 1 auto;
     overflow: auto;
   }
 
-  &__table {
-  }
+  // &__table {
+  // }
 
   &__footer {
     padding: 30px 0
@@ -309,8 +308,8 @@ body, html {
   padding: 30px 0;
   display: flex;
 
-  &__left {
-  }
+  // &__left {
+  // }
 
   &__right {
     display: flex;
@@ -346,12 +345,7 @@ body, html {
     transition: all .3s;
   }
 }
-.feather {
-}
-.feather-filter {
-}
-.mx-auto {
-}
+
 .table {
   width: 100%;
   border-spacing: 0 15px;
@@ -461,16 +455,7 @@ body, html {
     }
   }
 }
-.feather-check-square {
-}
-.w-4 {
-}
-.h-4 {
-}
-.mr-1 {
-}
-.feather-trash-2 {
-}
+
 .pagination {
   text-align: center;
   margin: 0;
@@ -507,8 +492,6 @@ body, html {
     color: #999;
   }
 
-}
-.disabled {
 }
 
 .waves-effect {
