@@ -169,14 +169,7 @@ body, html {
   &__burger {
   }
 }
-.feather {
-}
-.feather-user {
-}
-.mx-auto {
-}
-.feather-log-out {
-}
+
 .burger-btn {
 
   display: none;
@@ -291,12 +284,23 @@ body, html {
   border-bottom: 1px solid #1c3faa;
   padding-bottom: 15px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
 
   &__item {
     margin-right: 30px;
 
     span {
       display: block;
+    }
+  }
+
+  @include media-breakpoint-down(md){
+    display: block;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
@@ -318,11 +322,19 @@ body, html {
       margin-right: 0;
     }
   }
+
+  @include media-breakpoint-down(lg){
+    padding: 20px 0;
+  }
+
+  @include media-breakpoint-down(md){
+    padding: 15px 0;
+  }
 }
 .btn {
   padding: 5px 40px;
-  background-color: #1c3faa;
-  border: 1px solid #1c3faa;
+  background-color: $accent;
+  border: 1px solid $accent;
   border-radius: 5px;
   color: #fff;
   transition: all .3s;
@@ -349,8 +361,25 @@ body, html {
     text-transform: uppercase;
   }
 
+  tr{
+    transform: all .3s;
+  }
+
+  tr:hover {
+    box-shadow: 10px 8px 10px rgba(19,77,127,.17);
+    transition: all .3s;
+  }
+
   th {
     padding: 20px 15px;
+
+    @include media-breakpoint-down(md){
+      padding: 15px 15px;
+    }
+
+    @include media-breakpoint-down(sm){
+      padding: 10px 15px;
+    }
   }
 
   td{
@@ -366,6 +395,14 @@ body, html {
     &:last-child {
       border-bottom-right-radius: 10px;
       border-top-right-radius: 10px;
+    }
+
+    @include media-breakpoint-down(md){
+      padding: 15px 15px;
+    }
+
+    @include media-breakpoint-down(sm){
+      padding: 10px 15px;
     }
   }
 
@@ -405,6 +442,11 @@ body, html {
     i:not(:last-child) {
       padding-right: 30px;
     }
+
+    i:hover {
+      color: #6c757d;
+      transition: all .3s;
+  }
   }
 
   &__type--outcome {
