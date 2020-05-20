@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const burger = document.querySelector('.burger-btn')
   const menu = document.querySelector('.menu')
   burger.addEventListener('click', event => {
+    event.preventDefault()
     burger.classList.toggle('open')
     menu.classList.toggle('menu-open')
   })
