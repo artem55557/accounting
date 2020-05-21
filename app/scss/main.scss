@@ -344,6 +344,12 @@ body, html {
     border-color: #0056b3;
     transition: all .3s;
   }
+
+  &[disabled]{
+    background-color:#6c757d;
+    border-color:#6c757d;
+    cursor:not-allowed;
+  }
 }
 
 .table {
@@ -507,3 +513,154 @@ body, html {
 
 //************************LOGIN**************************
 
+.sign-in {
+  width:100%;
+  height:100%;
+  display:flex;
+
+  &__form {
+    max-width:350px;
+    display:flex;
+    flex-direction:column;
+
+    label{
+      margin:8px 0;
+    }
+
+    input, select{
+      margin:7.5px 0;
+      padding:4px 10px;
+      border:1px solid #e2e8f0;
+      border-radius:5px;
+      color:#9da3ab;
+
+      &:focus{
+        outline:0;
+        box-shadow:0 0 0 3px rgba(66,153,225,.5)
+      }
+    }
+
+    .success{
+      border-color:#91c714;
+    }
+
+    .warn{
+      border-color:#fbc500;
+    }
+
+    .error{
+      border-color:#d32929;
+    }
+
+    .text--success{
+      color:#91c714;
+    }
+
+    .text--warn{
+      color:#fbc500;
+    }
+
+    .text--error{
+      color:#d32929;
+    }
+
+    .btn{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @include media-breakpoint-down(md){
+      width: 50%;
+    }
+
+    @include media-breakpoint-down(sm){
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    flex-direction: column;
+  }
+}
+.block {
+
+  &__left {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 70px;
+
+    img{
+      width:30%;
+      height: auto;
+
+      @include media-breakpoint-down(lg){
+        width: 40%;
+      }
+
+      @include media-breakpoint-down(md){
+        width: 50%;
+      }
+
+      @include media-breakpoint-down(sm){
+        // width: 40%;
+      }
+
+      @include media-breakpoint-down(xs){
+        width: 40%;
+      }
+    }
+
+    @include media-breakpoint-down(md){
+      flex: 1 1 40%;
+      padding: 30px;
+      justify-content: center;
+    }
+  }
+
+  &__right {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+
+    @include media-breakpoint-down(md){
+      flex: 1 1 60%;
+      padding: 15px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.form {
+
+  &__footer {
+    padding: 15px;
+  }
+
+  
+  a{
+    text-align: right;
+    color:#2d3747;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.btn--w {
+  border-color: rgb(226, 232, 240);
+  background-color: #fff;
+  color: #000;
+  &:hover{
+    background-color:rgb(228, 233, 240);
+    border-color: rgb(226, 232, 240);
+  }
+}
