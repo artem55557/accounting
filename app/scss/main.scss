@@ -664,3 +664,104 @@ body, html {
     border-color: rgb(226, 232, 240);
   }
 }
+
+//**********************MODAL*********************
+
+
+
+.modal {
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  &__window {
+    margin: 5rem auto;
+    max-width: 500px;
+    width: 50%;
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 5px;
+  }
+
+  &__header {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  &__body {
+    padding: 15px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    label{
+      margin: 8px 0;
+    }
+
+    input, select{
+      padding: 4px 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      color: #9da3ab;
+
+      &:focus{
+        outline: 0;
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      }
+    }
+
+
+  }
+
+  &__footer {
+    margin-top: 15px;
+    padding: 15px;
+    border-top: 1px solid #e2e8f0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .success {
+    border-color: #91c714;
+  }
+  .error {
+    border-color: #d32929;
+  }
+  .warn {
+    border-color: #fbc500;
+  }
+
+  .text--error {
+    color: #d32929;
+  }
+  
+  .text--warn {
+    color: #fbc500;
+  }
+  
+  .text--success {
+    color: #91c714;
+  }
+}
+
+

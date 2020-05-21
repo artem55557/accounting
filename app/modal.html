@@ -1,0 +1,27 @@
+<div class="modal">
+  <div class="modal__overlay">
+    <div class="modal__window">
+      <div class="modal__header"><h2>Заголовок</h2></div>
+      <div class="modal__body">
+        <div class="modal__form">
+          <label for="">Дата</label>
+          <input type="text" placeholder="Дата" class="success">
+          <label for="">Описание</label>
+          <input type="text" placeholder="Описание" class="error">
+          <div class="text text--error"><small>Введите описание</small></div>
+          <label for="type">Тип</label>
+          <select name="type" id="type">
+            <option value="outcome">Расход</option>
+            <option value="income">Приход</option>
+          </select>
+          <label for="">Сумма</label>
+          <input type="text" placeholder="Сумма" class="warn">
+        </div>
+      </div>
+      <div class="modal__footer">
+        <button class="btn mr-15 btn--w">Отмена</button>
+        <button type="submit" class="btn">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
